@@ -199,9 +199,9 @@ def excluir_autor(autor, id_autor):
         return jsonify({'mensagem': 'Este autor não foi encontrado'})
     db.session.delete(autor_existente)
     db.session.commit()
-
+ 
     return jsonify({'mensagem': 'Autor excluído com sucesso!'})
 
-#inicia a Api
+#inicia a Api 
 if __name__ == "__main__":
     app.run(port=5000, host='localhost', debug=True)
