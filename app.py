@@ -202,5 +202,6 @@ def excluir_autor(autor, id_autor):
 
     return jsonify({'mensagem': 'Autor excluído com sucesso!'})
 
+#inicia a Api
 if __name__ == "__main__":
     app.run(port=5000, host='localhost', debug=True)
